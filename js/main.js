@@ -9,9 +9,10 @@ const searchError = document.getElementById('search-error');
 searchBtn.addEventListener('click', function(){
     const search = searchFiled.value;
 
-    /* search value & search Error clear */
+    /* search value clear */
     searchFiled.value = '';
-
+    /* Country Details clear */
+    countryDetails.textContent = '';
     /* Empty Error handling */
     if(search === ''){
         searchError.innerHTML = `<h2 class= "fw-bold text-center text-danger">Search Flied Cann't be Empty</h2>`;
